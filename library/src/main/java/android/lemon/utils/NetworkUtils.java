@@ -1,7 +1,6 @@
 package android.lemon.utils;
 
 import android.content.Context;
-import android.lemon.bean.DHCPInfo;
 import android.net.ConnectivityManager;
 import android.net.DhcpInfo;
 import android.net.NetworkInfo;
@@ -11,6 +10,9 @@ import android.telephony.TelephonyManager;
 
 /**
  * Created by Kevin on 2016/2/27.
+ * <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+ * <uses-permission android:name="android.permission.INTERNET" />
+ * <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
  */
 public class NetworkUtils {
 
@@ -150,7 +152,9 @@ public class NetworkUtils {
     }
 
 
-    /** 输入int值ip地址 和 子网掩码 得到广播地址 int值
+    /**
+     * 输入int值ip地址 和 子网掩码 得到广播地址 int值
+     *
      * @param ipAddress
      * @param mask
      * @return
