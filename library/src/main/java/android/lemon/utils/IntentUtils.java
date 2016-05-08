@@ -88,7 +88,7 @@ public class IntentUtils {
 		String state = Environment.getExternalStorageState();
 		if (state.equals(Environment.MEDIA_MOUNTED)) {
 			Intent getImageByCamera = new Intent("android.media.action.IMAGE_CAPTURE");
-			if(path==null||path.equals("")) {
+			if(path!=null && !path.equals("")) {
 				getImageByCamera.putExtra(MediaStore.EXTRA_OUTPUT,
 						Uri.fromFile(new File(path)));
 			}
@@ -190,6 +190,7 @@ public class IntentUtils {
 		smsManager.sendTextMessage(phone, null, msg, null, null);
 	}
 	
+	@SuppressWarnings("MissingPermission")
 	public static void callPhone(Context context, String phone) {
 		Intent intent = new Intent(Intent.ACTION_CALL,
 				Uri.parse("tel:" + phone));
