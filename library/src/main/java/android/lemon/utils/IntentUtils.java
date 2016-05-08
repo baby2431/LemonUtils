@@ -17,8 +17,8 @@ import java.io.File;
 
 public class IntentUtils {
 
-	public static int REQUEST_CODE_CAPTURE_CAMEIA = 3001;
-	public static int REQUEST_CODE_PICK_IMAGE = 3002;
+	public final static int REQUEST_CODE_CAPTURE_CAMERA = 3001;
+	public final static int REQUEST_CODE_PICK_IMAGE = 3002;
 
 	/**
 	 * 网络设置
@@ -92,7 +92,7 @@ public class IntentUtils {
 				getImageByCamera.putExtra(MediaStore.EXTRA_OUTPUT,
 						Uri.fromFile(new File(path)));
 			}
-			context.startActivityForResult(getImageByCamera, REQUEST_CODE_CAPTURE_CAMEIA);
+			context.startActivityForResult(getImageByCamera, REQUEST_CODE_CAPTURE_CAMERA);
 		} else {
 			Toast.makeText(context, "请确认已经插入SD卡", Toast.LENGTH_LONG).show();
 		}
