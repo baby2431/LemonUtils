@@ -9,5 +9,4 @@
         <uses-permission android:name="android.permission.DELETE_PACKAGES"/>-->
 
 
-    <uses-permission name="android.permission.CALL_PHONE" />
 </manifest>
