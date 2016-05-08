@@ -14,7 +14,7 @@ import java.util.List;
  * @author mty
  * @date 2013-6-10下午6:36:29
  */
-public class FieldUtil {
+public class FieldUtils {
 
     /**
      * 判断是否序列化

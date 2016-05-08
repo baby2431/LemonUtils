@@ -8,14 +8,14 @@ import java.util.Random;
  * @author trinea
  * @date 2014-12-10
  */
-public class RandomUtil {
+public class RandomUtils {
     public static final String NUMBERS_AND_LETTERS = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     public static final String NUMBERS             = "0123456789";
     public static final String LETTERS             = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     public static final String CAPITAL_LETTERS     = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     public static final String LOWER_CASE_LETTERS  = "abcdefghijklmnopqrstuvwxyz";
 
-    private RandomUtil() {
+    private RandomUtils() {
         throw new AssertionError();
     }
 
@@ -24,7 +24,7 @@ public class RandomUtil {
      *
      * @param length
      * @return
-     * @see RandomUtil#getRandom(String source, int length)
+     * @see RandomUtils#getRandom(String source, int length)
      */
     public static String getRandomNumbersAndLetters(int length) {
         return getRandom(NUMBERS_AND_LETTERS, length);
@@ -35,7 +35,7 @@ public class RandomUtil {
      *
      * @param length
      * @return
-     * @see RandomUtil#getRandom(String source, int length)
+     * @see RandomUtils#getRandom(String source, int length)
      */
     public static String getRandomNumbers(int length) {
         return getRandom(NUMBERS, length);
@@ -46,7 +46,7 @@ public class RandomUtil {
      *
      * @param length
      * @return
-     * @see RandomUtil#getRandom(String source, int length)
+     * @see RandomUtils#getRandom(String source, int length)
      */
     public static String getRandomLetters(int length) {
         return getRandom(LETTERS, length);
@@ -57,7 +57,7 @@ public class RandomUtil {
      *
      * @param length
      * @return
-     * @see RandomUtil#getRandom(String source, int length)
+     * @see RandomUtils#getRandom(String source, int length)
      */
     public static String getRandomCapitalLetters(int length) {
         return getRandom(CAPITAL_LETTERS, length);
@@ -68,7 +68,7 @@ public class RandomUtil {
      *
      * @param length
      * @return
-     * @see RandomUtil#getRandom(String source, int length)
+     * @see RandomUtils#getRandom(String source, int length)
      */
     public static String getRandomLowerCaseLetters(int length) {
         return getRandom(LOWER_CASE_LETTERS, length);
@@ -81,7 +81,7 @@ public class RandomUtil {
      * @param length
      * @return <ul>
      * <li>if source is null or empty, return null</li>
-     * <li>else see {@link RandomUtil#getRandom(char[] sourceChar, int length)}</li>
+     * <li>else see {@link RandomUtils#getRandom(char[] sourceChar, int length)}</li>
      * </ul>
      */
     public static String getRandom(String source, int length) {

@@ -7,7 +7,7 @@ import android.os.Looper;
  * @author MaTianyu
  * @date 2015-03-12
  */
-public class HandlerUtil {
+public class HandlerUtils {
     public static final Handler HANDLER = new Handler(Looper.getMainLooper());
 
     public static void runOnUiThread(Runnable runnable){

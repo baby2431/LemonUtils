@@ -16,8 +16,8 @@ import android.lemon.assist.Check;
  * @author Kevin
  * @date 2015-04-18
  */
-public class CpuUtil {
-    private static final String TAG = CpuUtil.class.getSimpleName();
+public class CpuUtils {
+    private static final String TAG = CpuUtils.class.getSimpleName();
     private static final String CPU_INFO_PATH = "/proc/cpuinfo";
     private static final String CPU_FREQ_NULL = "N/A";
     private static final String CMD_CAT = "/system/bin/cat";

@@ -13,7 +13,9 @@ import android.provider.Settings;
 import android.telephony.SmsManager;
 import android.widget.Toast;
 
-public class IntentUtil {
+import java.io.File;
+
+public class IntentUtils {
 
 	public static int REQUEST_CODE_CAPTURE_CAMEIA = 3001;
 	public static int REQUEST_CODE_PICK_IMAGE = 3002;
@@ -23,7 +25,7 @@ public class IntentUtil {
 	 * 
 	 * @param context
 	 */
-	public static void startNetworkSettingActivity(Context context) {
+	public static void startNetworkSetting(Context context) {
 		Intent intent = new Intent();
 		int sdkVersion = VERSION.SDK_INT;
 		if (sdkVersion >= 10) {
@@ -79,14 +81,23 @@ public class IntentUtil {
 	}
 
 	public static void getImageFromCamera(Activity context) {
+		getImageFromCamera(context,null);
+	}
+
+	public static void getImageFromCamera(Activity context,String path) {
 		String state = Environment.getExternalStorageState();
 		if (state.equals(Environment.MEDIA_MOUNTED)) {
 			Intent getImageByCamera = new Intent("android.media.action.IMAGE_CAPTURE");
+			if(path==null||path.equals("")) {
+				getImageByCamera.putExtra(MediaStore.EXTRA_OUTPUT,
+						Uri.fromFile(new File(path)));
+			}
 			context.startActivityForResult(getImageByCamera, REQUEST_CODE_CAPTURE_CAMEIA);
 		} else {
 			Toast.makeText(context, "请确认已经插入SD卡", Toast.LENGTH_LONG).show();
 		}
 	}
+
 
 	public static void getImageFromAlbum(Activity context) {
 		Intent intent = new Intent(Intent.ACTION_PICK);

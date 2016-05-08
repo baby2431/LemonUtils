@@ -22,7 +22,7 @@ import android.widget.Toast;
  * @author MaTianyu
  * @date 14-11-7
  */
-public class PackageUtil {
+public class PackageUtils {
     /**
      * App installation location flags of android system
      */
@@ -116,7 +116,7 @@ public class PackageUtil {
      * @return APP_INSTALL_AUTO or APP_INSTALL_INTERNAL or APP_INSTALL_EXTERNAL.
      */
     public static int getInstallLocation() {
-        ShellUtil.CommandResult commandResult = ShellUtil.execCommand(
+        ShellUtils.CommandResult commandResult = ShellUtils.execCommand(
                 "LD_LIBRARY_PATH=/vendor/lib:/system/lib pm get-install-location", false, true);
         if (commandResult.result == 0 && commandResult.responseMsg != null && commandResult.responseMsg.length() > 0) {
             try {

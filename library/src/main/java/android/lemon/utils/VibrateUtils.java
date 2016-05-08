@@ -12,7 +12,7 @@ import android.os.Vibrator;
  * @author MaTianyu
  * @date 2014-11-21
  */
-public class VibrateUtil {
+public class VibrateUtils {
 
     /**
      * Vibrate constantly for the specified period of time.
@@ -67,7 +67,7 @@ public class VibrateUtil {
 
 				@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 				public void run() {
-					VibrateUtil.stop();
+					VibrateUtils.stop();
 					vibrator = (Vibrator) context
 							.getSystemService(Context.VIBRATOR_SERVICE);
 
@@ -93,7 +93,7 @@ public class VibrateUtil {
 			new Thread() {
 				@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 				public void run() {
-					VibrateUtil.stop();
+					VibrateUtils.stop();
 					vibrator = (Vibrator) context
 							.getSystemService(Context.VIBRATOR_SERVICE);
 

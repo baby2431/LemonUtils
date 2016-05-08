@@ -20,8 +20,8 @@ import android.os.StatFs;
  * @author MaTianyu
  * @date 2015-04-19
  */
-public class SdCardUtil {
-    private static final String TAG = SdCardUtil.class.getSimpleName();
+public class SdCardUtils {
+    private static final String TAG = SdCardUtils.class.getSimpleName();
 
     /**
      * is sd card available.

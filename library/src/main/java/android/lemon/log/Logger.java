@@ -1,8 +1,8 @@
 package android.lemon.log;
 
 import android.app.AlertDialog;
-import android.lemon.utils.AndroidUtil;
-import android.lemon.utils.ArrayUtil;
+import android.lemon.utils.AndroidUtils;
+import android.lemon.utils.ArrayUtils;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Pair;
@@ -113,15 +113,15 @@ public final class Logger implements Printer {
                 logString(type, element, (String) object);
             } else if (object.getClass().isArray()) {
                 String msg = "Temporarily not support more than two dimensional Array!";
-                int dim = ArrayUtil.getArrayDimension(object);
+                int dim = ArrayUtils.getArrayDimension(object);
                 switch (dim) {
                     case 1:
-                        Pair pair = ArrayUtil.arrayToString(object);
+                        Pair pair = ArrayUtils.arrayToString(object);
                         msg = simpleName.replace("[]", "[" + pair.first + "] {\n");
                         msg += pair.second + "\n";
                         break;
                     case 2:
-                        Pair pair1 = ArrayUtil.arrayToObject(object);
+                        Pair pair1 = ArrayUtils.arrayToObject(object);
                         Pair pair2 = (Pair) pair1.first;
                         msg = simpleName.replace("[][]", "[" + pair2.first + "][" + pair2.second + "] {\n");
                         msg += pair1.second + "\n";
@@ -140,7 +140,7 @@ public final class Logger implements Printer {
                     while (iterator.hasNext()) {
                         String itemString = "[%d]:%s%s";
                         Object item = iterator.next();
-                        msg += String.format(itemString, flag, AndroidUtil.objectToString(item),
+                        msg += String.format(itemString, flag, AndroidUtils.objectToString(item),
                                 flag++ < collection.size() - 1 ? ",\n" : "\n");
                     }
                 }
@@ -152,16 +152,16 @@ public final class Logger implements Printer {
                 for (Object key : keys) {
                     String itemString = "[%s -> %s]\n";
                     Object value = map.get(key);
-                    msg += String.format(itemString, AndroidUtil.objectToString(key),
-                            AndroidUtil.objectToString(value));
+                    msg += String.format(itemString, AndroidUtils.objectToString(key),
+                            AndroidUtils.objectToString(value));
                 }
                 logString(type, element, msg + "}");
             } else {
-                logString(type, element, AndroidUtil.objectToString(object));
+                logString(type, element, AndroidUtils.objectToString(object));
             }
         } else {
 
-            logString(type, element, AndroidUtil.objectToString(object));
+            logString(type, element, AndroidUtils.objectToString(object));
         }
     }
 

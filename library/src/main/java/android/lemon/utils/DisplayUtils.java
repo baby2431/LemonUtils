@@ -7,8 +7,8 @@ import android.util.DisplayMetrics;
  * @author MaTianyu
  * @date 2015-04-19
  */
-public class DisplayUtil {
-    private static final String TAG = DisplayUtil.class.getSimpleName();
+public class DisplayUtils {
+    private static final String TAG = DisplayUtils.class.getSimpleName();
 
     /**
      * 获取 显示信息

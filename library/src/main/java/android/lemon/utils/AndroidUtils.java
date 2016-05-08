@@ -4,9 +4,6 @@ import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import android.content.Context;
-import android.net.wifi.WifiInfo;
-import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.SystemClock;
 
@@ -16,8 +13,8 @@ import android.os.SystemClock;
  * @author MaTianyu
  * @date 2014-09-25
  */
-public class AndroidUtil {
-    private static final String TAG = AndroidUtil.class.getSimpleName();
+public class AndroidUtils {
+    private static final String TAG = AndroidUtils.class.getSimpleName();
 
 
     /**

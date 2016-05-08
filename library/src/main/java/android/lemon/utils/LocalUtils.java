@@ -14,7 +14,7 @@ import android.content.res.Resources;
  * @date 2014年10月4日 下午6:04:56
  * 
  */
-public class LocalUtil {
+public class LocalUtils {
 	/**
 	 * @param activity
 	 * @param isEnglish

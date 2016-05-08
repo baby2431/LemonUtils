@@ -32,6 +32,12 @@ public class Check {
 	}
 
 	public static boolean isChinese(String str){
-		return str.matches("[\\u4e00-\\u9fa5]");
+		return str.matches("[\\u4e00-\\u9fa5]+");
+	}
+	public static boolean isEmail(String str){
+		return str.matches("[\\w!#$%&'*+/=?^_`{|}~-]+(?:\\.[\\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])?");
+	}
+	public static boolean isIDNum(String str){
+		return str.matches("^(\\d{6})(\\d{4})(\\d{2})(\\d{2})(\\d{3})([0-9]|X)$");
 	}
 }

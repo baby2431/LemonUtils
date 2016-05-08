@@ -12,8 +12,8 @@ import android.text.format.Formatter;
  * @author MaTianyu
  * @date 2015-04-19
  */
-public class MemoryUtil {
-    private static final String TAG = MemoryUtil.class.getSimpleName();
+public class MemoryUtils {
+    private static final String TAG = MemoryUtils.class.getSimpleName();
     private static final String MEM_INFO_PATH = "/proc/meminfo";
 
     /**

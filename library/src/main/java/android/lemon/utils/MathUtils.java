@@ -29,7 +29,7 @@ import android.graphics.PointF;
  * @version v1.0
  * @date：2013-01-17 下午11:52:13
  */
-public class MathUtil {
+public class MathUtils {
 
 	/**
 	 * 四舍五入.

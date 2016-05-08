@@ -22,7 +22,7 @@ public class AirPhone {
 	public static void setAirplaneModeOn(Context context, boolean enabling) {
 		if (enabling) {
 			if (Build.VERSION.SDK_INT >= 17) {
-				ShellUtil
+				ShellUtils
 						.execCommand(
 								"settings put global airplane_mode_on 1 \n am broadcast -a android.intent.action.AIRPLANE_MODE --ez state true \n",
 								true);
@@ -33,7 +33,7 @@ public class AirPhone {
 			}
 		} else {
 			if (Build.VERSION.SDK_INT >= 17) {
-				ShellUtil
+				ShellUtils
 						.execCommand(
 								"settings put global airplane_mode_on 0 \n  am broadcast -a android.intent.action.AIRPLANE_MODE --ez state false \n",
 								true);

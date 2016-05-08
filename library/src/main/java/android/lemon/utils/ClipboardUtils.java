@@ -10,7 +10,7 @@ import android.os.Build;
  * @author MaTianyu @http://litesuits.com
  * @date 2015-08-25
  */
-public class ClipboardUtil {
+public class ClipboardUtils {
 
     public static void copyToClipboardSupport(Context context, String text) {
         android.text.ClipboardManager clipboard = (android.text.ClipboardManager) context

@@ -64,7 +64,7 @@ import android.view.inputmethod.InputMethodManager;
  * @version v1.0
  * @date：2011-11-10 下午11:52:13
  */
-public class AppUtil {
+public class AppUtils {
 
 	public static List<String[]> mProcessList = null;
 
@@ -122,7 +122,7 @@ public class AppUtil {
 		return isRunning;
 	}
 	
-	static String TAG = "AppUtil";
+	static String TAG = "AppUtils";
 
 	private static final String SCHEME = "package";
 	/**
@@ -585,7 +585,7 @@ public class AppUtil {
 			}
 		}
 		if (process.memory == 0) {
-			Log.d(AppUtil.class, "##" + processName + ",top -n 1未找到");
+			Log.d(AppUtils.class, "##" + processName + ",top -n 1未找到");
 		}
 		return process;
 	}
@@ -654,7 +654,7 @@ public class AppUtil {
 	 */
 	public static String runCommand(String[] command, String workdirectory) {
 		String result = "";
-		Log.d(AppUtil.class, "#" + command);
+		Log.d(AppUtils.class, "#" + command);
 		try {
 			ProcessBuilder builder = new ProcessBuilder(command);
 			// set working directory
@@ -952,7 +952,7 @@ public class AppUtil {
 			memInfo = bufferedReader.readLine();
 			strs = memInfo.split("\\s+");
 			for (String str : strs) {
-				Log.d(AppUtil.class, str + "\t");
+				Log.d(AppUtils.class, str + "\t");
 			}
 			// 获得系统总内存，单位KB
 			memory = Integer.valueOf(strs[1]).intValue() * 1024;

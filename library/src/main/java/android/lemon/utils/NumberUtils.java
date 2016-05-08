@@ -4,7 +4,7 @@ package android.lemon.utils;
  * @author MaTianyu
  * @date 2014-11-21
  */
-public class NumberUtil {
+public class NumberUtils {
 
     public static int convertToint(String intStr, int defValue) {
         try {

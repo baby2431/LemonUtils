@@ -99,12 +99,12 @@ public class FileUtil {
             }
 
             // 文件存在
-            if (type == ImageUtil.CUTIMG) {
-                bitmap = ImageUtil.getCutBitmap(file, desiredWidth, desiredHeight);
-            } else if (type == ImageUtil.SCALEIMG) {
-                bitmap = ImageUtil.getScaleBitmap(file, desiredWidth, desiredHeight);
+            if (type == ImageUtils.CUTIMG) {
+                bitmap = ImageUtils.getCutBitmap(file, desiredWidth, desiredHeight);
+            } else if (type == ImageUtils.SCALEIMG) {
+                bitmap = ImageUtils.getScaleBitmap(file, desiredWidth, desiredHeight);
             } else {
-                bitmap = ImageUtil.getBitmap(file);
+                bitmap = ImageUtils.getBitmap(file);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -130,7 +130,7 @@ public class FileUtil {
                 return null;
             }
             // 文件存在
-            bitmap = ImageUtil.getBitmap(file);
+            bitmap = ImageUtils.getBitmap(file);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -235,7 +235,7 @@ public class FileUtil {
     public static Bitmap getBitmapFromURL(String url, int type, int desiredWidth, int desiredHeight) {
         Bitmap bit = null;
         try {
-            bit = ImageUtil.getBitmap(url, type, desiredWidth, desiredHeight);
+            bit = ImageUtils.getBitmap(url, type, desiredWidth, desiredHeight);
         } catch (Exception e) {
             Log.d(FileUtil.class, "下载图片异常：" + e.getMessage());
         }
@@ -309,7 +309,7 @@ public class FileUtil {
         }
         String name = null;
         try {
-            name = MD5Util.md5(url);
+            name = MD5Utils.md5(url);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -429,7 +429,7 @@ public class FileUtil {
      */
     public static void initFileDir(Context context) {
         if (BaseConfig.DOWNLOAD_DIR == null) {
-            PackageInfo info = AppUtil.getPackageInfo(context);
+            PackageInfo info = AppUtils.getPackageInfo(context);
             BaseConfig.DOWNLOAD_DIR = info.packageName;
         }
         // 默认下载文件根目录.

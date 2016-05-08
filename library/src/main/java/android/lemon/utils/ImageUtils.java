@@ -55,7 +55,7 @@ import android.widget.ImageView;
  * @version v3.0
  * @date：2014-07-17 下午11:52:13
  */
-public class ImageUtil {
+public class ImageUtils {
 
 	/** 图片处理：裁剪. */
 	public static final int CUTIMG = 0;
@@ -105,7 +105,7 @@ public class ImageUtil {
 				bm = wholeBm;
 			}
 		} catch (Exception e) {
-			Log.d(ImageUtil.class, "" + e.getMessage());
+			Log.d(ImageUtils.class, "" + e.getMessage());
 		} finally {
 			try {
 				if (is != null) {
@@ -481,12 +481,12 @@ public class ImageUtil {
 
 	private static boolean checkBitmap(Bitmap bitmap) {
 		if (bitmap == null) {
-			Log.e(ImageUtil.class, "原图Bitmap为空了");
+			Log.e(ImageUtils.class, "原图Bitmap为空了");
 			return false;
 		}
 
 		if (bitmap.getWidth() <= 0 || bitmap.getHeight() <= 0) {
-			Log.e(ImageUtil.class, "原图Bitmap大小为0");
+			Log.e(ImageUtils.class, "原图Bitmap大小为0");
 			return false;
 		}
 		return true;
@@ -740,8 +740,8 @@ public class ImageUtil {
 	public static byte[] view2Bytes(View view, Bitmap.CompressFormat compressFormat) {
 		byte[] b = null;
 		try {
-			Bitmap bitmap = ImageUtil.view2Bitmap(view);
-			b = ImageUtil.bitmap2Bytes(bitmap, compressFormat, true);
+			Bitmap bitmap = ImageUtils.view2Bitmap(view);
+			b = ImageUtils.bitmap2Bytes(bitmap, compressFormat, true);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -926,7 +926,7 @@ public class ImageUtil {
 		if (bitmap != null) {
 			try {
 				if (!bitmap.isRecycled()) {
-					Log.d(ImageUtil.class, "Bitmap释放" + bitmap.toString());
+					Log.d(ImageUtils.class, "Bitmap释放" + bitmap.toString());
 					bitmap.recycle();
 				}
 			} catch (Exception e) {
@@ -946,7 +946,7 @@ public class ImageUtil {
 			try {
 				for (Bitmap bitmap : bitmaps) {
 					if (bitmap != null && !bitmap.isRecycled()) {
-						Log.d(ImageUtil.class, "Bitmap释放" + bitmap.toString());
+						Log.d(ImageUtils.class, "Bitmap释放" + bitmap.toString());
 						bitmap.recycle();
 					}
 				}
@@ -986,7 +986,7 @@ public class ImageUtil {
 
 		// 第三步，计算平均值。
 		// 计算所有64个像素的灰度平均值。
-		int avgPixel = MathUtil.average(pixels);
+		int avgPixel = MathUtils.average(pixels);
 
 		// 第四步，比较像素的灰度。
 		// 将每个像素的灰度，与平均值进行比较。大于或等于平均值，记为1；小于平均值，记为0。
@@ -1006,7 +1006,7 @@ public class ImageUtil {
 		for (int i = 0; i < comps.length; i += 4) {
 			int result = comps[i] * (int) Math.pow(2, 3) + comps[i + 1] * (int) Math.pow(2, 2) + comps[i + 2]
 					* (int) Math.pow(2, 1) + comps[i + 2];
-			hashCode.append(MathUtil.binaryToHex(result));
+			hashCode.append(MathUtils.binaryToHex(result));
 		}
 		String sourceHashCode = hashCode.toString();
 		// 得到指纹以后，就可以对比不同的图片，看看64位中有多少位是不一样的。
@@ -1041,15 +1041,15 @@ public class ImageUtil {
 
 		releaseBitmap(temp);
 
-		int[][] pxMatrix = MathUtil.arrayToMatrix(pixels, width, height);
-		double[][] doublePxMatrix = MathUtil.intToDoubleMatrix(pxMatrix);
+		int[][] pxMatrix = MathUtils.arrayToMatrix(pixels, width, height);
+		double[][] doublePxMatrix = MathUtils.intToDoubleMatrix(pxMatrix);
 
 		// 计算DCT,已经变成8*8了
 		double[][] dtc = FDCT.fDctTransform(doublePxMatrix);
 
 		// 计算平均值。
-		double[] dctResult = MathUtil.matrixToArray(dtc);
-		int avgPixel = MathUtil.average(dctResult);
+		double[] dctResult = MathUtils.matrixToArray(dtc);
+		int avgPixel = MathUtils.average(dctResult);
 
 		// 比较像素的灰度。
 		// 将每个像素的灰度，与平均值进行比较。大于或等于平均值，记为1；小于平均值，记为0。
@@ -1069,7 +1069,7 @@ public class ImageUtil {
 		for (int i = 0; i < comps.length; i += 4) {
 			int result = comps[i] * (int) Math.pow(2, 3) + comps[i + 1] * (int) Math.pow(2, 2) + comps[i + 2]
 					* (int) Math.pow(2, 1) + comps[i + 2];
-			hashCode.append(MathUtil.binaryToHex(result));
+			hashCode.append(MathUtils.binaryToHex(result));
 		}
 		String sourceHashCode = hashCode.toString();
 		// 得到指纹以后，就可以对比不同的图片，看看64位中有多少位是不一样的。

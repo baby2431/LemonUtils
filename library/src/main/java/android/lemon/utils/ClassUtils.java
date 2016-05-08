@@ -10,7 +10,7 @@ import java.util.Date;
  * @author mty
  * @date 2013-6-10下午8:00:46
  */
-public class ClassUtil {
+public class ClassUtils {
 
 	/**
 	 * 判断类是否是基础数据类型

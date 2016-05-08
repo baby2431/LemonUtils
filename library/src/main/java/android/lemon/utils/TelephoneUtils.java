@@ -16,9 +16,9 @@ import android.telephony.TelephonyManager;
  * @author MaTianyu
  * @date 2014-09-25
  */
-public class TelephoneUtil {
+public class TelephoneUtils {
 
-    private static final String TAG = TelephoneUtil.class.getSimpleName();
+    private static final String TAG = TelephoneUtils.class.getSimpleName();
 
     /**
      * IMSI是国际移动用户识别码的简称(International Mobile Subscriber Identity)

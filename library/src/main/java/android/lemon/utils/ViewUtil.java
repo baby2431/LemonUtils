@@ -219,7 +219,7 @@ public class ViewUtil {
 	 * @return px值
 	 */
 	public static float dip2px(Context context, float dipValue) {
-		DisplayMetrics mDisplayMetrics = AppUtil.getDisplayMetrics(context);
+		DisplayMetrics mDisplayMetrics = AppUtils.getDisplayMetrics(context);
 		return applyDimension(TypedValue.COMPLEX_UNIT_DIP, dipValue, mDisplayMetrics);
 	}
 
@@ -233,7 +233,7 @@ public class ViewUtil {
 	 * @return dip值
 	 */
 	public static float px2dip(Context context, float pxValue) {
-		DisplayMetrics mDisplayMetrics = AppUtil.getDisplayMetrics(context);
+		DisplayMetrics mDisplayMetrics = AppUtils.getDisplayMetrics(context);
 		return pxValue / mDisplayMetrics.density;
 	}
 
@@ -247,7 +247,7 @@ public class ViewUtil {
 	 * @return sp值
 	 */
 	public static float sp2px(Context context, float spValue) {
-		DisplayMetrics mDisplayMetrics = AppUtil.getDisplayMetrics(context);
+		DisplayMetrics mDisplayMetrics = AppUtils.getDisplayMetrics(context);
 		return applyDimension(TypedValue.COMPLEX_UNIT_SP, spValue, mDisplayMetrics);
 	}
 
@@ -261,7 +261,7 @@ public class ViewUtil {
 	 * @return sp值
 	 */
 	public static float px2sp(Context context, float pxValue) {
-		DisplayMetrics mDisplayMetrics = AppUtil.getDisplayMetrics(context);
+		DisplayMetrics mDisplayMetrics = AppUtils.getDisplayMetrics(context);
 		return pxValue / mDisplayMetrics.scaledDensity;
 	}
 

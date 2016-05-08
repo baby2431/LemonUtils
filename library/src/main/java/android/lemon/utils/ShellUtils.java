@@ -11,7 +11,7 @@ import java.util.List;
  *  @author trinea
  * @date 2014-12-10
  */
-public class ShellUtil {
+public class ShellUtils {
 
     /**
      * check whether has root permission

@@ -31,7 +31,7 @@ import java.util.GregorianCalendar;
  * @version v1.0
  * @date：2013-01-18 下午11:52:13
  */
-public class DateUtil {
+public class DateUtils {
 
 	/** 时间日期格式化到年月日时分秒. */
 	public static final String dateFormatYMDHMS = "yyyy-MM-dd HH:mm:ss";
@@ -229,7 +229,7 @@ public class DateUtil {
 	 * @return String String类型的当前日期时间
 	 */
 	public static String getCurrentDate(String format) {
-		Log.d(DateUtil.class, "getCurrentDate:" + format);
+		Log.d(DateUtils.class, "getCurrentDate:" + format);
 		String curDateTime = null;
 		try {
 			SimpleDateFormat mSimpleDateFormat = new SimpleDateFormat(format);

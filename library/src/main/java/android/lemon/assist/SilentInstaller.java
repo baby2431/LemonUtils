@@ -5,7 +5,7 @@ import java.io.File;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
-import android.lemon.utils.ShellUtil;
+import android.lemon.utils.ShellUtils;
 import android.util.Log;
 
 
@@ -321,7 +321,7 @@ public class SilentInstaller {
          **/
         StringBuilder command = new StringBuilder().append("LD_LIBRARY_PATH=/vendor/lib:/system/lib pm uninstall")
                 .append(isKeepData ? " -k " : " ").append(packageName.replace(" ", "\\ "));
-        ShellUtil.CommandResult commandResult = ShellUtil.execCommand(command.toString(), !isSystemApplication(context), true);
+        ShellUtils.CommandResult commandResult = ShellUtils.execCommand(command.toString(), !isSystemApplication(context), true);
         if (commandResult.responseMsg != null
                 && (commandResult.responseMsg.contains("Success") || commandResult.responseMsg.contains("success"))) {
             return DELETE_SUCCEEDED;
@@ -381,7 +381,7 @@ public class SilentInstaller {
          **/
         StringBuilder command = new StringBuilder().append("LD_LIBRARY_PATH=/vendor/lib:/system/lib pm install ")
                 .append(pmParams == null ? "" : pmParams).append(" ").append(filePath.replace(" ", "\\ "));
-        ShellUtil.CommandResult commandResult = ShellUtil.execCommand(command.toString(),
+        ShellUtils.CommandResult commandResult = ShellUtils.execCommand(command.toString(),
                 !isSystemApplication(context), true);
         if (commandResult.responseMsg != null
                 && (commandResult.responseMsg.contains("Success") || commandResult.responseMsg.contains("success"))) {
@@ -509,7 +509,7 @@ public class SilentInstaller {
      * @return APP_INSTALL_AUTO or APP_INSTALL_INTERNAL or APP_INSTALL_EXTERNAL.
      */
     public int getInstallLocation() {
-        ShellUtil.CommandResult commandResult = ShellUtil.execCommand(
+        ShellUtils.CommandResult commandResult = ShellUtils.execCommand(
                 "LD_LIBRARY_PATH=/vendor/lib:/system/lib pm get-install-location", false, true);
         if (commandResult.result == 0 && commandResult.responseMsg != null && commandResult.responseMsg.length() > 0) {
             try {
