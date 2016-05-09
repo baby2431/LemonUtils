@@ -15,7 +15,7 @@ import android.lemon.utils.Log;
 /**
  * 打印日志
  *
- * @author mty
+ * @author Kevin
  * @time 2011-11-2下午06:23:29
  */
 public class LogReader extends Thread {

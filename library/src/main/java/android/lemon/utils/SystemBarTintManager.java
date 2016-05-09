@@ -38,7 +38,7 @@ import android.widget.FrameLayout.LayoutParams;
 /**
  * 在Android 4.4 以上 系统状�?栏和导航栏与Activity�?���?
  *
- *
+ * @author Kevin
  * Class to manage status and navigation bar tint effects when using KitKat
  * translucent system UI modes.
  */

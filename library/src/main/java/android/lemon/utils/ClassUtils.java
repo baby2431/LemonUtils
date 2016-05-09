@@ -6,8 +6,8 @@ import java.util.Date;
 
 /**
  * 类工具
- * 
- * @author mty
+ *
+ * @author Kevin
  * @date 2013-6-10下午8:00:46
  */
 public class ClassUtils {

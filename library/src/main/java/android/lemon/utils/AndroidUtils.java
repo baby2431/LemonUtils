@@ -10,7 +10,6 @@ import android.os.SystemClock;
 /**
  * 手机信息 & MAC地址 & 开机时间
  *
- * @author MaTianyu
  * @date 2014-09-25
  */
 public class AndroidUtils {
@@ -72,7 +71,7 @@ public class AndroidUtils {
     }
 
     /**
-     * 获取 开机时间
+     * 获取开机时间
      */
     public static String getBootTimeString() {
         long ut = SystemClock.elapsedRealtime() / 1000;
@@ -84,6 +83,9 @@ public class AndroidUtils {
         return h + ":" + m;
     }
 
+    /** 打印信息信息
+     * @return
+     */
     public static String printSystemInfo() {
         Date date = new Date(System.currentTimeMillis());
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

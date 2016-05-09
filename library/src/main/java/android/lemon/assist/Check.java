@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * 辅助判断
  *
- * @author mty
+ * @author Kevin
  * @date 2013-6-10下午5:50:57
  */
 public class Check {

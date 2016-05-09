@@ -1,7 +1,7 @@
 package android.lemon.data.cipher;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 14-7-31
  */
 public interface Encrypt {

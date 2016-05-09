@@ -19,7 +19,7 @@ import android.provider.Settings;
 import android.widget.Toast;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 14-11-7
  */
 public class PackageUtils {

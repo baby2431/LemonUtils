@@ -27,7 +27,7 @@ import java.util.GregorianCalendar;
 /**
  * © 2012 amsoft.cn 名称：AbDateUtil.java 描述：日期处理类.
  *
- * @author 还如一梦中
+ * @author Kevin
  * @version v1.0
  * @date：2013-01-18 下午11:52:13
  */

@@ -19,7 +19,7 @@ package android.lemon.utils;
 import java.nio.charset.Charset;
 
 /**
- * Charsets
+ * @author Kevin
  */
 public class Charsets {
     public static Charset toCharset(Charset charset) {

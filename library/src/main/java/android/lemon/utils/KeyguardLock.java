@@ -9,7 +9,7 @@ import android.os.Build;
  * <!-- 解锁 -->
  * require <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
  *
- * @author MaTianyu
+ * @author Kevin
  * @date 2014-12-12
  */
 public class KeyguardLock {

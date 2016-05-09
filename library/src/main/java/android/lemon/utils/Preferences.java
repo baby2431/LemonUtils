@@ -8,7 +8,7 @@ import android.content.SharedPreferences.Editor;
 
 /**
  * 初始化这个 对象 ， 然后 使用就是调用这里面的方法
- * 
+ *
  * @author Kevin
  * 
  */

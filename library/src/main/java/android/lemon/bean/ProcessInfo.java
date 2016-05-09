@@ -22,8 +22,8 @@ package android.lemon.bean;
  * © 2012 amsoft.cn 
  * 名称：AbProcessInfo.java 
  * 描述：进程信息
- * 
- * @author 还如一梦中
+ *
+ * @author Kevin
  * @version v1.0
  * @date：2013-11-13 上午9:00:52
  */

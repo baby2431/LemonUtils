@@ -13,7 +13,7 @@ import android.telephony.TelephonyManager;
  *
  * <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
  *
- * @author MaTianyu
+ * @author Kevin
  * @date 2014-09-25
  */
 public class TelephoneUtils {

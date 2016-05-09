@@ -19,11 +19,7 @@ package android.lemon.bean;
 
 // TODO: Auto-generated Javadoc
 /**
- * © 2012 amsoft.cn 
- * 名称：AbPsRow.java 
- * 描述：PS后得到的行信息
- * 
- * @author 还如一梦中
+ * @author Kevin
  * @version v1.0
  * @date：2014-10-13 上午9:00:52
  */

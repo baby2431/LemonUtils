@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 2015-03-12
  */
 public class HandlerUtils {

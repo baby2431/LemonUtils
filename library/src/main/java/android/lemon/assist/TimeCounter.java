@@ -6,7 +6,7 @@ import android.lemon.utils.Log;
 /**
  * Time Counter.
  *
- * @author MaTianyu
+ * @author Kevin
  *         2013-12-11下午3:42:28
  */
 public class TimeCounter {

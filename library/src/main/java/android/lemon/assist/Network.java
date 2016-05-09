@@ -16,8 +16,8 @@ import android.net.NetworkInfo;
  *
  * 半夜了，研究了一下Android的Network方面，发现网上有些文章理解的是不对的。
  * 以下方法是我研究得出的结论和方法，如有误也感谢指出。
- * 
- * @author MaTianyu
+ *
+ * @author Kevin
  * 2014-1-8上午 00:33:11
  */
 public class Network {

@@ -10,7 +10,7 @@ import android.os.PowerManager;
  * <!-- 亮屏 -->
  * require <uses-permission android:name="android.permission.WAKE_LOCK"/>
  *
- * @author MaTianyu
+ * @author Kevin
  * @date 2014-11-04
  */
 public class WakeLock {

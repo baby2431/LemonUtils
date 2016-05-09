@@ -7,7 +7,7 @@ import android.content.Context;
 import android.os.Build;
 
 /**
- * @author MaTianyu @http://litesuits.com
+ * @author Kevin
  * @date 2015-08-25
  */
 public class ClipboardUtils {

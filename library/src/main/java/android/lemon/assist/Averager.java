@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * 用以统计平均数
  *
- * @author MaTianyu
+ * @author Kevin
  *         2013-12-11下午3:31:03
  */
 public class Averager {

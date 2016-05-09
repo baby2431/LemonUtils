@@ -6,8 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /**
- * @author MaTianyu
- * @date 14-7-31
+ * @author Kevin
  */
 public class ByteUtils {
     /**

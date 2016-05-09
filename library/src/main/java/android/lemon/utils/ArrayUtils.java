@@ -5,8 +5,7 @@ import android.util.Pair;
 import java.util.Arrays;
 
 /**
- * Created by pengwei08 on 2015/7/25.
- * Thanks to zhutiantao for providing an array of analytical methods.
+ * @author Kevin
  */
 public final class ArrayUtils {
 

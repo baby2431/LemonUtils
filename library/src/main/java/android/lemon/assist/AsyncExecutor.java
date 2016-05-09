@@ -15,7 +15,7 @@ import android.os.Looper;
 /**
  * 异步执行
  *
- * @author MaTianyu
+ * @author Kevin
  */
 public class AsyncExecutor {
     private static final String TAG = AsyncExecutor.class.getSimpleName();

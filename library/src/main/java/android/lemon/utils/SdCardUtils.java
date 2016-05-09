@@ -17,7 +17,7 @@ import android.os.StatFs;
 /**
  * Get SD card info.
  *
- * @author MaTianyu
+ * @author Kevin
  * @date 2015-04-19
  */
 public class SdCardUtils {

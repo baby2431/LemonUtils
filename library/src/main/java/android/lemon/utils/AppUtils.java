@@ -58,11 +58,8 @@ import android.view.inputmethod.InputMethodManager;
 
 // TODO: Auto-generated Javadoc
 /**
- * © 2012 amsoft.cn 名称：AbAppUtil.java 描述：应用工具类.
- *
- * @author 还如一梦中
+ * @author Kevin
  * @version v1.0
- * @date：2011-11-10 下午11:52:13
  */
 public class AppUtils {
 

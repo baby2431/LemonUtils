@@ -6,7 +6,7 @@ import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 2014-12-05
  */
 public class StringCodingUtils {

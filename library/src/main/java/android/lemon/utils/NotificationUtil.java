@@ -15,7 +15,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 2014-11-19
  */
 public class NotificationUtil {

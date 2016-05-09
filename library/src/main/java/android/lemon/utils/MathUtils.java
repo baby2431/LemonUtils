@@ -23,9 +23,8 @@ import android.graphics.PointF;
 // TODO: Auto-generated Javadoc
 
 /**
- * © 2012 amsoft.cn 名称：AbMathUtil.java 描述：数学处理类.
- * 
- * @author 还如一梦中
+ *
+ * @author Kevin
  * @version v1.0
  * @date：2013-01-17 下午11:52:13
  */

@@ -4,7 +4,7 @@ package android.lemon.utils;
  * reference apache commons <a
  * href="http://commons.apache.org/codec/">http://commons.apache.org/codec/</a>
  *
- * @author Aub
+ * @author Kevin
  *
  */
 public class HexUtils {

@@ -8,6 +8,9 @@ import android.os.SystemClock;
 import android.provider.Settings;
 import android.view.WindowManager;
 
+/**
+ * @author Kevin
+ */
 public class ScreenUtils {
 
     /**

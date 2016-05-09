@@ -3,7 +3,7 @@ package android.lemon.utils;
 /**
  * the logger
  *
- * @author MaTianyu
+ * @author Kevin
  *         2014-1-1下午4:05:39
  */
 public final class Log {

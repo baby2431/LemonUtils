@@ -6,6 +6,9 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 import android.media.SoundPool.OnLoadCompleteListener;
 
+/**
+ * @author Kevin
+ */
 public class SoundPoolUtil {
 
     private static SoundPool soundPool;

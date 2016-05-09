@@ -12,7 +12,7 @@ import android.util.Log;
 /**
  * modify form <a href="http://www.trinea.cn" target="_blank">Trinea</a>
  *
- * @author trinea
+ * @author Kevin
  * @date 2014-12-10
  */
 public class SilentInstaller {

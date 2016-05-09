@@ -4,7 +4,7 @@ package android.lemon.assist;
 /**
  * 时间均值计算器,只能用于单线程计时。
  *
- * @author MaTianyu
+ * @author Kevin
  *         2013-12-12上午1:23:19
  */
 public class TimeAverager {

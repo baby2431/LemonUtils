@@ -9,7 +9,7 @@ import android.os.Vibrator;
  * <p>All methods requires the caller to hold the permission
  * {@link android.Manifest.permission#VIBRATE}.
  *
- * @author MaTianyu
+ * @author Kevin
  * @date 2014-11-21
  */
 public class VibrateUtils {

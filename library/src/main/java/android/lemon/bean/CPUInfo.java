@@ -17,11 +17,7 @@ package android.lemon.bean;
 
 // TODO: Auto-generated Javadoc
 /**
- * © 2012 amsoft.cn 
- * 名称：AbCPUInfo.java 
- * 描述：CPU信息
- * 
- * @author 还如一梦中
+ * @author Kevin
  * @version v1.0
  * @date：2013-11-13 上午9:00:52
  */

@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.provider.Settings;
 
-/** 飞行模式 AirMode
+/**
+ * 飞行模式 AirMode
  * @author Kevin
  *
  */

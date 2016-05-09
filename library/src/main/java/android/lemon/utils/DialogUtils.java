@@ -7,6 +7,9 @@ import android.content.DialogInterface;
 import android.text.Html;
 import android.view.View;
 
+/**
+ * @author Kevin
+ */
 public class DialogUtils {
 
     public static AlertDialog.Builder dialogBuilder(Context context, String title, String msg) {

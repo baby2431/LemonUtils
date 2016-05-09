@@ -9,7 +9,7 @@ import android.text.format.Formatter;
 /**
  * Get memory info.
  *
- * @author MaTianyu
+ * @author Kevin
  * @date 2015-04-19
  */
 public class MemoryUtils {

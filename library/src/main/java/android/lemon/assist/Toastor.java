@@ -4,7 +4,7 @@ import android.content.Context;
 import android.widget.Toast;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 2014-07-31
  */
 public class Toastor {

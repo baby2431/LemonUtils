@@ -9,7 +9,7 @@ import android.os.Build;
 import android.os.SystemClock;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 2015-03-26
  */
 public class PollingUtils {

@@ -4,7 +4,7 @@ package android.lemon.data.cipher;
 import android.lemon.assist.Base64;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 14-7-31
  */
 public class Base64Cipher extends Cipher {

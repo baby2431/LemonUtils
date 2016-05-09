@@ -1,7 +1,7 @@
 package android.lemon.utils;
 
 /**
- * @author MaTianyu
+ * @author Kevin
  * @date 2014-11-21
  */
 public class NumberUtils {
