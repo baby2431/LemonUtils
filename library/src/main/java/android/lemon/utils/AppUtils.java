@@ -66,34 +66,37 @@ public class AppUtils {
 	public static List<String[]> mProcessList = null;
 
 	/**
-	 * 描述：打开并安装文件.
+	 * 得到软件版本号
 	 *
-	 * @param context
-	 *            the context
-	 * @param file
-	 *            apk文件路径
+	 * @param context 上下文
+	 * @return 当前版本Code
 	 */
-	public static void installApk(Context context, File file) {
-		Intent intent = new Intent();
-		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-		intent.setAction(android.content.Intent.ACTION_VIEW);
-		intent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
-		context.startActivity(intent);
+	public static int getVerCode(Context context) {
+		int verCode = -1;
+		try {
+			String packageName = context.getPackageName();
+			verCode = context.getPackageManager().getPackageInfo(packageName, 0).versionCode;
+		} catch (PackageManager.NameNotFoundException e) {
+			e.printStackTrace();
+		}
+		return verCode;
 	}
 
 	/**
-	 * 描述：卸载程序.
+	 * 得到软件显示版本信息
 	 *
-	 * @param context
-	 *            the context
-	 * @param packageName
-	 *            包名
+	 * @param context 上下文
+	 * @return 当前版本信息
 	 */
-	public static void uninstallApk(Context context, String packageName) {
-		Intent intent = new Intent(Intent.ACTION_DELETE);
-		Uri packageURI = Uri.parse("package:" + packageName);
-		intent.setData(packageURI);
-		context.startActivity(intent);
+	public static String getVerName(Context context) {
+		String verName = "";
+		try {
+			String packageName = context.getPackageName();
+			verName = context.getPackageManager().getPackageInfo(packageName, 0).versionName;
+		} catch (PackageManager.NameNotFoundException e) {
+			e.printStackTrace();
+		}
+		return verName;
 	}
 
 	/**

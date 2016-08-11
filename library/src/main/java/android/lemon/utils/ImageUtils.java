@@ -74,7 +74,7 @@ public class ImageUtils {
 
 	/**
 	 * 直接获取互联网上的图片.
-	 * 
+	 *
 	 * @param url
 	 *            要下载文件的网络地址
 	 * @param type
@@ -120,7 +120,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：获取原图.
-	 * 
+	 *
 	 * @param file
 	 *            File对象
 	 * @return Bitmap 图片
@@ -137,7 +137,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：获取原图.
-	 * 
+	 *
 	 * @param path
 	 *            文件路径
 	 * @return Bitmap 图片
@@ -154,7 +154,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：缩放图片.压缩
-	 * 
+	 *
 	 * @param file
 	 *            File对象
 	 * @param desiredWidth
@@ -224,7 +224,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：缩放图片,不压缩的缩放.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @param desiredWidth
@@ -259,7 +259,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：根据等比例缩放图片.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @param scale
@@ -299,7 +299,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：裁剪图片.
-	 * 
+	 *
 	 * @param file
 	 *            File对象
 	 * @param desiredWidth
@@ -368,7 +368,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：裁剪图片.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @param desiredWidth
@@ -421,7 +421,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：获取图片尺寸
-	 * 
+	 *
 	 * @param file
 	 *            File对象
 	 * @return Bitmap 新图片
@@ -502,7 +502,7 @@ public class ImageUtils {
 
 	/**
 	 * Drawable转Bitmap.
-	 * 
+	 *
 	 * @param drawable
 	 *            要转化的Drawable
 	 * @return Bitmap
@@ -518,7 +518,7 @@ public class ImageUtils {
 
 	/**
 	 * Bitmap对象转换Drawable对象.
-	 * 
+	 *
 	 * @param bitmap
 	 *            要转化的Bitmap对象
 	 * @return Drawable 转化完成的Drawable对象
@@ -538,7 +538,7 @@ public class ImageUtils {
 
 	/**
 	 * Bitmap对象转换TransitionDrawable对象.
-	 * 
+	 *
 	 * @param bitmap
 	 *            要转化的Bitmap对象 imageView.setImageDrawable(td);
 	 *            td.startTransition(200);
@@ -560,7 +560,7 @@ public class ImageUtils {
 
 	/**
 	 * Drawable对象转换TransitionDrawable对象.
-	 * 
+	 *
 	 * @param drawable
 	 *            要转化的Drawable对象 imageView.setImageDrawable(td);
 	 *            td.startTransition(200);
@@ -582,7 +582,7 @@ public class ImageUtils {
 
 	/**
 	 * 将Bitmap转换为byte[].
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @param mCompressFormat
@@ -617,7 +617,7 @@ public class ImageUtils {
 
 	/**
 	 * 获取Bitmap大小.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @param mCompressFormat
@@ -649,7 +649,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：将byte[]转换为Bitmap.
-	 * 
+	 *
 	 * @param b
 	 *            图片格式的byte[]数组
 	 * @return bitmap 得到的Bitmap
@@ -668,7 +668,7 @@ public class ImageUtils {
 
 	/**
 	 * 将ImageView转换为Bitmap.
-	 * 
+	 *
 	 * @param view
 	 *            要转换为bitmap的View
 	 * @return byte[] 图片的byte[]
@@ -686,7 +686,7 @@ public class ImageUtils {
 
 	/**
 	 * 将View转换为Drawable.需要最上层布局为Linearlayout
-	 * 
+	 *
 	 * @param view
 	 *            要转换为Drawable的View
 	 * @return BitmapDrawable Drawable
@@ -706,7 +706,7 @@ public class ImageUtils {
 
 	/**
 	 * 将View转换为Bitmap.需要最上层布局为Linearlayout
-	 * 
+	 *
 	 * @param view
 	 *            要转换为bitmap的View
 	 * @return byte[] 图片的byte[]
@@ -730,7 +730,7 @@ public class ImageUtils {
 
 	/**
 	 * 将View转换为byte[].
-	 * 
+	 *
 	 * @param view
 	 *            要转换为byte[]的View
 	 * @param compressFormat
@@ -750,7 +750,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：旋转Bitmap为一定的角度.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @param degrees
@@ -771,7 +771,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：旋转Bitmap为一定的角度并四周暗化处理.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @param degrees
@@ -804,7 +804,7 @@ public class ImageUtils {
 
 	/**
 	 * 转换图片转换成圆形.
-	 * 
+	 *
 	 * @param bitmap
 	 *            传入Bitmap对象
 	 * @return the bitmap
@@ -860,7 +860,7 @@ public class ImageUtils {
 
 	/**
 	 * 转换图片转换成镜面效果的图片.
-	 * 
+	 *
 	 * @param bitmap
 	 *            传入Bitmap对象
 	 * @return the bitmap
@@ -918,7 +918,7 @@ public class ImageUtils {
 
 	/**
 	 * 释放Bitmap对象.
-	 * 
+	 *
 	 * @param bitmap
 	 *            要释放的Bitmap
 	 */
@@ -937,7 +937,7 @@ public class ImageUtils {
 
 	/**
 	 * 释放Bitmap数组.
-	 * 
+	 *
 	 * @param bitmaps
 	 *            要释放的Bitmap数组
 	 */
@@ -957,7 +957,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：简单的图像的特征值，用于缩略图找原图比较好.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @return the hash code
@@ -1017,7 +1017,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：图像的特征值余弦相似度.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @return the DCT hash code
@@ -1080,7 +1080,7 @@ public class ImageUtils {
 
 	/**
 	 * 描述：图像的特征值颜色分布 将颜色分4个区，0,1,2,3 区组合共64组，计算每个像素点属于哪个区.
-	 * 
+	 *
 	 * @param bitmap
 	 *            the bitmap
 	 * @return the color histogram
@@ -1144,7 +1144,7 @@ public class ImageUtils {
 	/**
 	 * 计算"汉明距离"（Hamming distance）。
 	 * 如果不相同的数据位不超过5，就说明两张图片很相似；如果大于10，就说明这是两张不同的图片。.
-	 * 
+	 *
 	 * @param sourceHashCode
 	 *            源hashCode
 	 * @param hashCode
@@ -1164,7 +1164,7 @@ public class ImageUtils {
 
 	/**
 	 * 灰度值计算.
-	 * 
+	 *
 	 * @param pixels
 	 *            像素
 	 * @return int 灰度值
@@ -1179,7 +1179,7 @@ public class ImageUtils {
 
 	/**
 	 * The main method.
-	 * 
+	 *
 	 * @param args
 	 *            the arguments
 	 */
@@ -1195,7 +1195,7 @@ public class ImageUtils {
 		options.inJustDecodeBounds = false;
 		return BitmapFactory.decodeFile(filePath, options);
 	}
-	
+
 
 	public byte[] compressBitmapToBytes(String filePath, int reqWidth, int reqHeight, int quality) {
 		Bitmap bitmap = getSmallBitmap(filePath, reqWidth, reqHeight);
@@ -1291,14 +1291,14 @@ public class ImageUtils {
     public static Bitmap byteToBitmap(byte[] b) {
         return (b == null || b.length == 0) ? null : BitmapFactory.decodeByteArray(b, 0, b.length);
     }
-	
+
     /**
      * 把bitmap转换成Base64编码String
      */
     public static String bitmapToString(Bitmap bitmap) {
         return Base64.encodeToString(bitmapToByte(bitmap), Base64.DEFAULT);
     }
-	
+
 	public static boolean saveBitmap(Bitmap bitmap, String absPath) {
 		return saveBitmap(bitmap, new File(absPath));
 	}

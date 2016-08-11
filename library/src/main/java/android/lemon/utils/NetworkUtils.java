@@ -8,6 +8,11 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.telephony.TelephonyManager;
 
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.net.SocketException;
+import java.util.Enumeration;
+
 /**
  * Created by Kevin on 2016/2/27.
  * <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -127,6 +132,29 @@ public class NetworkUtils {
     }
 
 
+    /**
+     * 获取本机IP地址
+     * @return null：没有网络连接
+     */
+    public static String getIpAddress() {
+        try {
+            NetworkInterface nerworkInterface;
+            InetAddress inetAddress;
+            for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements();) {
+                nerworkInterface = en.nextElement();
+                for (Enumeration<InetAddress> enumIpAddr = nerworkInterface.getInetAddresses(); enumIpAddr.hasMoreElements();) {
+                    inetAddress = enumIpAddr.nextElement();
+                    if (!inetAddress.isLoopbackAddress()) {
+                        return inetAddress.getHostAddress().toString();
+                    }
+                }
+            }
+            return null;
+        } catch (SocketException ex) {
+            ex.printStackTrace();
+            return null;
+        }
+    }
     /**
      * 描述：判断网络是否有效.
      *

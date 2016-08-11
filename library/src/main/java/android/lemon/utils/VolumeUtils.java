@@ -1,13 +1,23 @@
 package android.lemon.utils;
 
+import android.annotation.TargetApi;
+import android.app.ActivityManager;
 import android.content.Context;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.media.AudioManager;
+import android.os.Build;
+
+import java.lang.reflect.InvocationTargetException;
+import java.security.MessageDigest;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 注意，调节音量需要权限 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
  * Created by Kevin on 2016/3/19.
  */
-public class SoundUtils {
+public class VolumeUtils {
 
     /**
      * 调节系统的音量到目标音量
@@ -129,7 +139,6 @@ public class SoundUtils {
                 AudioManager.FLAG_REMOVE_SOUND_AND_VIBRATE);
 
     }
-
 
 
 }
