@@ -738,8 +738,8 @@ public class IntentUtils {
      * @param fileEndings
      * @return
      */
-    private boolean checkEndsWithInStringArray(String checkItsEnd,
-                                               String[] fileEndings) {
+    private static boolean checkEndsWithInStringArray(String checkItsEnd,
+                                                      String[] fileEndings) {
         for (String aEnd : fileEndings) {
             if (checkItsEnd.endsWith(aEnd))
                 return true;
@@ -752,7 +752,7 @@ public class IntentUtils {
      * @param currentPath
      * @return
      */
-    public boolean openFile(Context context, File currentPath) {
+    public static boolean openFile(Context context, File currentPath) {
         if (currentPath != null && currentPath.isFile()) {
             String fileName = currentPath.toString();
             Intent intent;
