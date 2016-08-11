@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="android.lemon">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="android.lemon">
 
     <!-- these permissions need application is 'system app' -->
     <!-- <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
@@ -9,4 +10,5 @@
         <uses-permission android:name="android.permission.DELETE_PACKAGES"/>-->
 
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 </manifest>
