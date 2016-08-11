@@ -19,13 +19,13 @@ import android.lemon.utils.Log;
  * @time 2011-11-2下午06:23:29
  */
 public class LogReader extends Thread {
-    public static final String TAG           = "LogReader";
+    public static final String TAG = "LogReader";
     public static final String LOG_FILE_PATH = "/bonglog.txt";
     public static final String LOG_ROOT_PATH = "/sdcard";
 
-    public static  boolean   open        = true;
-    private static LogReader instance    = null;
-    private static Process   mLogcatProc = null;
+    public static boolean open = true;
+    private static LogReader instance = null;
+    private static Process mLogcatProc = null;
 
     private BufferedReader mReader = null;
     private String packageName = "*";
